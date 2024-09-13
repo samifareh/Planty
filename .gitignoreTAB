@@ -1,0 +1,24 @@
+.DS_Store
+.CFUserTextEncoding
+.bash_profile
+.gitconfig
+.profile
+.ssh/
+.viminfo
+.vscode/
+.zprofile
+.zprofile.macports-saved_2024-08-08_at_16:24:32
+.zsh_history
+.zsh_sessions/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/
+VS code /
+index.h
+

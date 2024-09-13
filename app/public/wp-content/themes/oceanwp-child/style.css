@@ -11,7 +11,7 @@ Updated: 2024-08-09 13:12:56
 
 */
 
-/* class commande-block */
+/* class formulaire page commander */
 
 /* Firefox */
 input[type=number] {
@@ -32,7 +32,7 @@ input::-o-outer-spin-button {
 	margin:0
 }
 
-/*formulaire commande */
+/*formulaire page commander */
 
 .colonnes {
     display: flex;
@@ -54,11 +54,155 @@ input::-o-outer-spin-button {
 .colonnedroite p, .colonnegauche p {
 	margin-left: 0!Important;
 	margin-right: 0!Important;
-
 }
+
+
+.colonnegauche {
+	border-right: 1px white solid;
+	
+}
+
 
 input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
     width: 100%;
 }
 
-.wpcf7 input[type="email"],
+p {
+    width: 100%;
+}
+
+/*Bouton*/ 
+.boutoncommander {
+	margin: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0!Important;
+    position: relative;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background: #E0B9B4;
+	border-radius: 5px;
+	text-transform: capitalize;
+	font-family: Syne!Important;
+    font-size: 15px;
+    font-weight: 400!Important;
+    line-height: 37px;
+	padding-left: 30px;
+    padding-right: 30px;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
+	background-color: #C02E44;
+}
+
+
+/*.wpcf7 input[type="email"],*/
+
+
+
+/* class formulaire page nous rencontrer*/
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wpforms-head-container {
+    display: flex;
+    justify-content: center;
+	font-family: Syne;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+}
+
+label.wpforms-field-label {
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+button#wpforms-submit-1134 {
+	font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+	text-transform: capitalize;
+	padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Header menu nav*/
+
+/*Nous rencontrer*/
+
+li#menu-item-765 {
+	font-family: Syne;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+li#menu-item-765:hover {
+	font-family: Syne;
+font-size: 13px;
+font-weight: 700;
+line-height: 15.6px;
+text-align: left;
+color: black;
+}
+
+.button#wpforms-submit-1134 :hover {
+	background-color: #C02E44;
+} /*probleme hover ne fonctionne pas*/
+
+/*li#menu-item-765 a.menu-link{
+	font-family: Syne;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.2px;
+text-align: left;
+
+
+}*/
+
+/*#site-navigation-wrap .dropdown-menu >li >a, .oceanwp-mobile-menu-icon a, #searchform-header-replace-close {
+    color: white;
+}*/
+
+/*Commander*/
+
+li#menu-item-791 {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    background: #DC9F96;
+	color: white!Important;
+}
+
+li#menu-item-791:hover {
+	background-color: #C02E44;
+	color: white!Important;
+}
+
+#site-navigation-wrap .dropdown-menu >.current-menu-item >a, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a, #site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover {
+    color: white!Important;

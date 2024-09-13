@@ -22,3 +22,21 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+/* FONCTION HOOK PLANTY */
+
+function add_new_menu($items, $args) {
+
+    // Vérifie si l'utilisateur est connecté
+    if (is_user_logged_in()) {
+        // Crée un lien "Admin" pour les utilisateurs connectés
+        $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
+        // Ajoute le lien "Admin" au menu existant
+        $items .= $admin_link;
+    }
+
+    // Retourne les éléments du menu
+    return $items;
+}
+// Applique le filtre pour modifier les items du menu
+add_filter('wp_nav_menu_items','add_new_menu', 10, 2 );

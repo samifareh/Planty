@@ -1,0 +1,85 @@
+/* Formulaire page commande*/
+
+
+/* General form styling */
+.wpcf7 form {
+   
+    padding: 20px;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center;
+}
+
+/* Styling the form elements */
+.wpcf7 p {
+    margin-bottom: 15px;
+    width: 48%; 
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Styling the form labels and inputs */
+.wpcf7 label {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="number"],
+.wpcf7 textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    width: 100%; /* Full width of the parent container */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Submit button styling */
+.wpcf7 input[type="submit"] {
+    background-color: #D19E9D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 10px;
+	
+}
+
+/* Add a divider */
+.wpcf7 form ::before {
+    content: "";
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    /*left: 50%; */
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+/* Adjusting form layout on smaller screens */
+@media (max-width: 768px) {
+    .wpcf7 form {
+        flex-direction: column; /* Stack form fields on mobile */
+        width: 90%; /* Adjust form width for mobile screens */
+    }
+
+    .wpcf7 p {
+        width: 100%; /* Full width for each field on mobile */
+    }
+
+    .wpcf7 form::before {
+        display: none; /* Remove the divider on mobile */
+    }
+}

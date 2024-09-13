@@ -11,3 +11,54 @@ Updated: 2024-08-09 13:12:56
 
 */
 
+/* class commande-block */
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+
+/*formulaire commande */
+
+.colonnes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eael-contact-form-align-default {
+    display: inherit!Important;
+}
+
+.colonnegauche, .colonnedroite {
+    width: 40%;
+}
+
+/* .wpcf7-form-control {
+    width: 100%!Important;
+} */
+
+.colonnedroite p, .colonnegauche p {
+	margin-left: 0!Important;
+	margin-right: 0!Important;
+
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    width: 100%;
+}
+
+.wpcf7 input[type="email"],

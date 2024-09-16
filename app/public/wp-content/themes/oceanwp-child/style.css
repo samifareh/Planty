@@ -71,12 +71,12 @@ p {
 	width: 100%;
 }
 
-h2 {
+h6 {
     font-family: Syne;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    text-align: left;
+    /*text-align: left;*/
     color: white;
 }
 
@@ -132,7 +132,7 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
 
 
 
-/* class formulaire page nous rencontrer*/
+/* FORMULAIRE PAGE NOUS RENCONTRER*/
 
 .wpforms-submit-container {
     display: flex;
@@ -163,8 +163,8 @@ button#wpforms-submit-1134 {
     font-weight: 400;
     text-align: center;
 	text-transform: capitalize;
-	padding-left: 30px;
-    padding-right: 30px;
+	padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* HEADER MENU NAV*/
@@ -177,17 +177,21 @@ li#menu-item-765 {
 	font-weight: 400;
 	line-height: 19.2px;
 	text-align: left;
+	color:black!Important;
 }
 
 li#menu-item-765:hover {
 	font-family: Syne;
-font-size: 13px;
-font-weight: 700;
-line-height: 15.6px;
-text-align: left;
-color: black;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15.6px;
+	text-align: left;
+	color: black!Important;
 }
 
+span.text-wrap {
+    color: black;
+}
 
 /*li#menu-item-765 a.menu-link{
 	font-family: Syne;
@@ -195,8 +199,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 19.2px;
 text-align: left;
-
-
 }*/
 
 /*#site-navigation-wrap .dropdown-menu >li >a, .oceanwp-mobile-menu-icon a, #searchform-header-replace-close {
@@ -217,9 +219,10 @@ li#menu-item-791 {
 
 li#menu-item-791:hover {
 	background-color: #C02E44;
-	color: white!Important;
+	/*color: white!Important;*/
 }
 
 #site-navigation-wrap .dropdown-menu >.current-menu-item >a, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a, #site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover {
     color: white!Important;
 }
+

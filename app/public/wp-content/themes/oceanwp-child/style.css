@@ -92,12 +92,12 @@ p.name {
 
 /*Bouton*/ 
 .boutoncommander {
-	margin: 20px;
+	margin-top: 20px;
     width: 100%;
     text-align: center;
 }
 
-.wpcf7-spinner {
+/* .wpcf7-spinner {
     visibility: hidden;
     display: inline-block;
     background-color: #23282d;
@@ -109,7 +109,7 @@ p.name {
     padding: 0;
     margin: 0!Important;
     position: relative;
-}
+} */
 
 input.wpcf7-form-control.wpcf7-submit.has-spinner {
     background: #E0B9B4;
@@ -121,6 +121,10 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner {
     line-height: 37px;
 	padding-left: 30px;
     padding-right: 30px;
+}
+
+span.wpcf7-spinner {
+    display: none;
 }
 
 input.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
@@ -177,7 +181,7 @@ li#menu-item-765 {
 	font-weight: 400;
 	line-height: 19.2px;
 	text-align: left;
-	color:black!Important;
+/*	color:black!Important;*/
 }
 
 li#menu-item-765:hover {
@@ -186,11 +190,11 @@ li#menu-item-765:hover {
 	font-weight: 700;
 	line-height: 15.6px;
 	text-align: left;
-	color: black!Important;
+	/* color: black!Important; */
 }
 
 span.text-wrap {
-    color: black;
+    /* color: black; */
 }
 
 /*li#menu-item-765 a.menu-link{
@@ -217,12 +221,43 @@ li#menu-item-791 {
 	color: white!Important;
 }
 
-li#menu-item-791:hover {
-	background-color: #C02E44;
-	/*color: white!Important;*/
+.commander-white a {
+    color: white ! Important;
 }
 
-#site-navigation-wrap .dropdown-menu >.current-menu-item >a, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a, #site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover {
-    color: white!Important;
+li#menu-item-791:hover {
+	background-color: #C02E44;
 }
+
+/*#site-navigation-wrap .dropdown-menu >.current-menu-item >a, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a, #site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover {
+    color: white!Important;
+}*/
+
+/* MEDIA QUERIES*/
+
+/*Formulaire de commande */
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .colonnes, .boutoncommander {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+   .colonnegauche {
+    width: 100%;
+   }
+
+   .colonnedroite {
+    width: 100%;
+    margin-top: 40px;
+   }
+
+    .colonnebordure {
+        display: none;
+
+    }
+}
+
+
 

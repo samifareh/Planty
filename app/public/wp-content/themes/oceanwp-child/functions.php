@@ -30,9 +30,17 @@ function add_new_menu($items, $args) {
     // Vérifie si l'utilisateur est connecté
     if (is_user_logged_in()) {
         // Crée un lien "Admin" pour les utilisateurs connectés
-        $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
+        // $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
         // Ajoute le lien "Admin" au menu existant
-        $items .= $admin_link;
+        // $items .= $admin_link;
+        $itemsArray= array();
+        while(false!==($items_pos=strpos($items, "<li", 3))) {
+            $itemsArray[]=substr($items, 0, $items_pos );
+            $items=substr($items, $items_pos);
+        }
+        $itemsArray[]=$items;
+        array_splice($itemsArray, 1, 0, '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>' );
+        $items=implode('', $itemsArray);
     }
 
     // Retourne les éléments du menu
@@ -40,3 +48,7 @@ function add_new_menu($items, $args) {
 }
 // Applique le filtre pour modifier les items du menu
 add_filter('wp_nav_menu_items','add_new_menu', 10, 2 );
+
+
+
+

@@ -32,106 +32,45 @@ input::-o-outer-spin-button {
   margin: 0;
 }
 
-/*FORMULAIRE PAGE COMMANDER */
+/* HEADER MENU NAV*/
 
-.colonnes {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
+/*Nous rencontrer*/
 
-.colonnebordure {
-  border: 1px solid white;
-}
-
-.eael-contact-form-align-default {
-  display: inherit !important;
-}
-
-.colonnegauche,
-.colonnedroite {
-  width: 40%;
-}
-
-/* .wpcf7-form-control {
-    width: 100%!Important;
-} */
-
-.colonnedroite p,
-.colonnegauche p {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
-  width: 100%;
-}
-
-p {
-  width: 100%;
-}
-
-h6 {
+li#menu-item-765 {
   font-family: Syne;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  /*text-align: left;*/
-  color: white;
-}
-
-p.name {
-  margin-bottom: 20px;
-  font-family: Syne;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 19.2px;
   text-align: left;
-  color: white;
 }
 
-/*Bouton*/
-.boutoncommander {
-  margin-top: 20px;
-  width: 100%;
+li#menu-item-765:hover {
+  font-family: Syne;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.6px;
+  text-align: left;
+}
+
+/*Commander*/
+
+li#menu-item-791 {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
   text-align: center;
+  background: #dc9f96;
+  color: white !important;
 }
 
-/* .wpcf7-spinner {
-    visibility: hidden;
-    display: inline-block;
-    background-color: #23282d;
-    opacity: 0.75;
-    width: 24px;
-    height: 24px;
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    margin: 0!Important;
-    position: relative;
-} */
-
-input.wpcf7-form-control.wpcf7-submit.has-spinner {
-  background: #e0b9b4;
-  border-radius: 5px;
-  text-transform: capitalize;
-  font-family: Syne !important;
-  font-size: 15px;
-  font-weight: 400 !important;
-  line-height: 37px;
-  padding-left: 30px;
-  padding-right: 30px;
+.commander-white a {
+  color: white !important;
 }
 
-span.wpcf7-spinner {
-  display: none;
-}
-
-input.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
+li#menu-item-791:hover {
   background-color: #c02e44;
 }
-
-/*.wpcf7 input[type="email"],*/
 
 /* FORMULAIRE PAGE NOUS RENCONTRER*/
 
@@ -168,67 +107,85 @@ button#wpforms-submit-1134 {
   padding-right: 50px;
 }
 
-/* HEADER MENU NAV*/
+/*FORMULAIRE PAGE COMMANDER */
 
-/*Nous rencontrer*/
+.colonnes {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 
-li#menu-item-765 {
+.colonnebordure {
+  border: 1px solid white;
+}
+
+.eael-contact-form-align-default {
+  display: inherit !important;
+}
+
+.colonnegauche,
+.colonnedroite {
+  width: 40%;
+}
+
+.colonnedroite p,
+.colonnegauche p {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+}
+
+h6 {
   font-family: Syne;
-  font-size: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+
+p.name {
+  margin-bottom: 20px;
+  font-family: Syne;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: 24px;
   text-align: left;
-  /*	color:black!Important;*/
+  color: white;
 }
 
-li#menu-item-765:hover {
-  font-family: Syne;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15.6px;
-  text-align: left;
-  /* color: black!Important; */
-}
-
-span.text-wrap {
-  /* color: black; */
-}
-
-/*li#menu-item-765 a.menu-link{
-	font-family: Syne;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.2px;
-text-align: left;
-}*/
-
-/*#site-navigation-wrap .dropdown-menu >li >a, .oceanwp-mobile-menu-icon a, #searchform-header-replace-close {
-    color: white;
-}*/
-
-/*Commander*/
-
-li#menu-item-791 {
-  font-family: Syne;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19.2px;
+/*Bouton*/
+.boutoncommander {
+  margin-top: 20px;
+  width: 100%;
   text-align: center;
-  background: #dc9f96;
-  color: white !important;
 }
 
-.commander-white a {
-  color: white !important;
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+  background: #e0b9b4;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: Syne !important;
+  font-size: 15px;
+  font-weight: 400 !important;
+  line-height: 37px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-li#menu-item-791:hover {
+span.wpcf7-spinner {
+  display: none;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
   background-color: #c02e44;
 }
-
-/*#site-navigation-wrap .dropdown-menu >.current-menu-item >a, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a, #site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover, #site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover {
-    color: white!Important;
-}*/
 
 /*FOOTER*/
 
@@ -257,26 +214,19 @@ div#footer-bottom-inner {
 
 #footer-bottom #footer-bottom-menu {
   float: right;
-  /* text-align: right; */
-  /* padding-left: 15px; */
   display: flex;
   justify-content: center;
 }
 
-/*#navigationclr {
-        margin: 0;
-    }*/
-
 /* MEDIA QUERIES*/
 
-/*Formulaire de commande */
 
 @media (max-width: 767px) and (min-width: 320px) {
+  /* Formulaire précommande */
   .colonnes,
   .boutoncommander {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .colonnegauche {
@@ -291,4 +241,26 @@ div#footer-bottom-inner {
   .colonnebordure {
     display: none;
   }
+}
+
+/* Header menu*/
+
+/* Nous rencontrer */
+ul#menu-main-menu-1 {
+  font-family: Syne;
+  font-weight: 400;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-619.current_page_item.menu-item-765:hover {
+  font-family: Syne;
+  font-weight: 700;
+}
+
+/* Commander */
+li.commander-white.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-791 {
+  background-color: #dc9f96;
+}
+
+li.commander-white.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-791:hover {
+  background-color: #c02e44;
 }

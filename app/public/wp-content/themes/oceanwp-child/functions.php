@@ -32,7 +32,7 @@ function add_new_menu($items, $args)
 {
 
     // Vérifie si l'utilisateur est connecté
-    if (is_user_logged_in()) {
+    if (is_user_logged_in() && $args->theme_location === 'main_menu') {
 
         $itemsArray = array();
         while (false !== ($items_pos = strpos($items, "<li", 3))) {
